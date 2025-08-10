@@ -1,0 +1,40 @@
+{
+    "format_version": 3,
+    "services": [
+        {
+            "name": "NOIZ-ITG",
+            "common": false,
+            "servers": [
+                {
+                    "name": "NOIZ Primary ITG",
+                    "url": "itg://ingest.noiz.live"
+                }
+            ],
+            "recommended": {
+                "keyint": 2,
+                "output": "ftl_output",
+                "max audio bitrate": 160,
+                "max video bitrate": 8000,
+                "profile": "main",
+                "bframes": 0
+            }
+        },
+        {
+            "name": "NOIZ-ITG Legacy",
+            "common": false,
+            "servers": [
+                {
+                    "name": "NOIZ Primary Legacy",
+                    "url": "rtmp://ingest.noiz.live/live"
+                }
+            ],
+            "recommended": {
+                "keyint": 2,
+                "output": "rtmp_output",
+                "max audio bitrate": 320,
+                "max video bitrate": 6000,
+                "profile": "high"
+            }
+        }
+    ]
+}
